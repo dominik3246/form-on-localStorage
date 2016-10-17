@@ -1,0 +1,33 @@
+#formularz {
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	width: 500px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 400px;
+	padding: 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.login-container {
+	padding: 16px;
+}
