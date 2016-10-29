@@ -11,36 +11,31 @@
 	<link href="style.css" rel="stylesheet" type="text/css" >
 
 </head>
-
 <body>
-<section id="formularz">
-<form class="login-container">
-		ZALOGUJ: <br>
-		<label>Username</label> <br>
+<div id="wrapper">
+	<form class="login-container">
 
-		<input type="text" id="login" placeholder="Enter Username" required> <br>
+			<input type="text" id="login" placeholder="Enter Username" required> <br>
 
-		<label>Password</label> <br>
+			<input type="password" id="password" placeholder="Enter Password" required><br>
+			<button id="login-btn" type="button">Login</button>
+	</form>
+<div id="login-info">
 
-		<input type="password" id="password" placeholder="Enter Password" required><br>
-		<button id="login-btn" type="submit">Login</button>
-</form>
+</div>
+	<form id="register-container">
+		<h1> If You don't have a password yet </h1>
 
-<form id="register-container">
-	UTWÓRZ KONTO <br>
+			<input id="register-login" type="text" placeholder="Username" required> <br>
 
-		<label>Username</label> <br>
+			<input id="register-pw" type="password" placeholder="Password" required><br>
 
-		<input id="register-login" type="text" placeholder="Username" required> <br>
+			<button id="register-btn" type="button" >Register</button>
 
-		<label>Password</label> <br>
-
-		<input id="register-pw" type="password" placeholder="Password" required><br>
-
-		<button id="register-btn" type="submit">REGISTER</button>
-</form>
-</section>
-
+			<p> *Your login must have at least 6 characters <p>
+			<p> *Your password must have at least 8 characters including 1 uppercase letter and 1 alphanumeric character <p>
+	</form>
+<div>
 <script type="text/javascript">
   function downloadJSAtOnload() {
    var element = document.createElement("script");

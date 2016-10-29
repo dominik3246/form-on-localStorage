@@ -7,6 +7,8 @@ loginButton.addEventListener("click", check, false);
 var registerName = document.getElementById("register-login");
 var pw = document.getElementById("register-pw");
 
+var loginInfo = document.getElementById("login-info");
+
 function userInfo(login, password) {
 var yourLogin = login;
 var yourPassword = password;
@@ -59,23 +61,9 @@ var userName = document.getElementById("login").value;
 var userPw = document.getElementById("password").value;
 for (i=0; i < storedLogin.length; i++) {
   if (userName == storedLogin[i].login && userPw == storedLogin[i].password) {
-    alert("Poprawnie zalogowano");
     userInfo(storedLogin[i].login, storedLogin[i].password);
     return;
   }
+  loginInfo.innerHTML = "Failed to log in";
 }
-alert("Wprowadzony login lub hasło jest nieprawidłowe");
 };
-
-/*
-if (userName.value == storedLogin && userPw.value == storedPw)
-{
-  alert("Poprawnie zalogowano");
-  window.open("success.html");
-}
-
-else
-{
-  alert ("Wpisany login lub hasło jest nieprawidłowe");
-}
-*/

@@ -1,33 +1,99 @@
-#formularz {
-	width: 500px;
-	text-align: center;
-	margin: 0 auto;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
 }
 
-form {
-	border: 3px solid #f1f1f1;
-	width: 500px;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+body {
+  line-height:1;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content:'';
+  content:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+
+
+
+
+#wrapper {
+	height: 100vh;
+	background-image: url("background-index.jpeg");
+	background-size: cover;
 }
 
 input[type="text"], input[type="password"] {
-	width: 400px;
+	width: 200px;
 	padding: 10px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
+	margin: 5px;
+	/*border: 1px solid #cccccc;*/
 	box-sizing: border-box;
 }
 
 button {
 	background-color: #4CAF50;
-	color: white;
+	color: #ffffff;
 	padding: 14px 20px;
-	margin: 8px 0;
+	margin: 5px;
 	border: none;
 	cursor: pointer;
-	width: 100%;
+	width: 100px;
+	border-radius: 5px;
 }
 
 .login-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#register-container {
+	height: auto;
 	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 200px;
+}
+
+#register-container p {
+  padding: 5px;
+  color: #010101;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 30px;
+	box-shadow: 2px;
+	padding: 40px;
+}
+
+
+#login-info {
+  display: flex;
+	justify-content: flex-end;
+  color: red;
+  margin-right: 10px;
+  margin-top: 8px;
 }

@@ -8,24 +8,50 @@
 
 	<link href="style.css" rel="stylesheet" type="text/css" >
 </head>
+
 <body>
 
-<section class="wrapper">
-	<div id="userLogin"></div>
+		<section class="wrapper">
+			<div id="userLogin"></div>
 
-</section>
+		</section>
 
-<script>
-function showUserInfo() {
-	var info = document.getElementById("userLogin");
+	<section id="Events">
+		<div>
+			<h2>List of actual events</h2> <br>
+			<div id="actualEvents">
 
-	var login = localStorage.getItem("actualLogin");
+			</div>
+		</div>
 
-	info.innerHTML = "Witaj " + login;
-}
+		<div id="newEvents">
+			<h2>Add new event</h2> <br><br>
 
-window.onload = showUserInfo;
+			<p>Add event name</p> <br>
+			<input type="text" id="newEventName"> <br>
+			<!-- <p>Add date of event</p> <br> -->
+			<!-- <input type="datetime-local" id="dateTimeOfNewEvent"> <br> -->
+			<p>Tell somethink about your event</p> <br>
+			<input type="text" id="descriptionOfNewEvent"> <br>
+			<button type="submit" id="createNewEvent">Create new Event</button>
+		</div>
+	</section>
+
+
+
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+   var element = document.createElement("script");
+   element.src = "success.js";
+   document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+   window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+   window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>
+
 
 </body>
 
